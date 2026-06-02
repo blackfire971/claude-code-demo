@@ -1,0 +1,43 @@
+@reference "../../app/globals.css"
+
+/* base skeleton block */
+.skeleton {
+  @apply bg-lighter rounded-md;
+  animation: pulse 1.8s ease-in-out infinite;
+}
+
+/* variants */
+.text {
+  @apply h-3 w-full;
+}
+
+.circle {
+  @apply rounded-full;
+}
+
+/* sizes */
+.sm {
+  @apply h-2;
+}
+
+.md {
+  @apply h-3;
+}
+
+.lg {
+  @apply h-4;
+}
+
+.xl {
+  @apply h-6;
+}
+
+/* animation */
+@keyframes pulse {
+  0%, 100% {
+    opacity: 0.4;
+  }
+  50% {
+    opacity: 0.7;
+  }
+}
