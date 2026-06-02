@@ -1,6 +1,7 @@
 // preview page for newly created UI components
 
 import Skeleton from "@/components/Skeleton"
+import Avatar from "@/components/Avatar"
 
 export default function PreviewPage() {
   return (
@@ -71,6 +72,29 @@ export default function PreviewPage() {
           <div className="space-y-2 text-center">
             <p className="text-sm text-body/60">xl</p>
             <Skeleton variant="circle" size="xl" className="size-20" />
+          </div>
+        </div>
+      </section>
+
+      {/* Avatar — initials display */}
+      <section className="space-y-3">
+        <h3>Avatar — Initials</h3>
+        <div className="flex gap-6 items-center">
+          <div className="space-y-2 text-center">
+            <p className="text-sm text-body/60">Simple name</p>
+            <Avatar name="Alice" />
+          </div>
+          <div className="space-y-2 text-center">
+            <p className="text-sm text-body/60">PascalCase</p>
+            <Avatar name="JohnDoe" />
+          </div>
+          <div className="space-y-2 text-center">
+            <p className="text-sm text-body/60">Single letter</p>
+            <Avatar name="Sam" />
+          </div>
+          <div className="space-y-2 text-center">
+            <p className="text-sm text-body/60">Multi-upper</p>
+            <Avatar name="JSONParser" />
           </div>
         </div>
       </section>

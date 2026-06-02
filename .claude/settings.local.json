@@ -3,7 +3,8 @@
     "allow": [
       "Bash(git init *)",
       "Bash(git switch:*)",
-      "Bash(git checkout *)"
+      "Bash(git checkout *)",
+      "Bash(git commit *)"
     ]
   }
 }
