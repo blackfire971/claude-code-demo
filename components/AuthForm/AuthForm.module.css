@@ -1,0 +1,43 @@
+@reference "../../app/globals.css"
+
+.form {
+  @apply mx-auto max-w-md
+}
+
+.field {
+  @apply mb-4
+}
+
+.label {
+  @apply block text-sm text-body mb-1
+}
+
+.input {
+  @apply w-full px-3 py-2 rounded-lg bg-lighter text-heading
+         border border-transparent
+         focus:outline-none focus:border-primary
+         transition-colors duration-150 ease-in-out
+}
+
+.inputWrapper {
+  @apply relative
+}
+
+.toggle {
+  @apply absolute right-3 top-1/2 -translate-y-1/2
+         text-body hover:text-heading
+         transition-colors duration-150 ease-in-out
+         bg-transparent border-none cursor-pointer p-0
+}
+
+.submit {
+  @apply w-full mt-6 cursor-pointer
+}
+
+.navLink {
+  @apply text-center text-sm text-body mt-6
+}
+
+.navLink a {
+  @apply text-primary hover:underline
+}
